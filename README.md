@@ -7,7 +7,7 @@ Dataset Summary
 
 There are six different splits provided in this dataset. A short summary of the dataset is provided below:
 
-[EMNIST ByClass](https://github.com/Pooja12312/Character-Recognition-App-byclass-/blob/main/Emnist_byclass_Model.ipynb): 814,255 characters. 62 unbalanced classes.<br>
+[EMNIST ByClass](https://github.com/Bhagyashri134/Character-Recognition-App-byclass-/blob/main/Emnist_byclass_Model.ipynb): 814,255 characters. 62 unbalanced classes.<br>
 EMNIST ByMerge: 814,255 characters. 47 unbalanced classes.<br>
 EMNIST Balanced: 131,600 characters. 47 balanced classes.<br>
 EMNIST Letters: 145,600 characters. 26 balanced classes.<br>
