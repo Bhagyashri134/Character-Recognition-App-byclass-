@@ -55,16 +55,16 @@ def apply_style(predicted_char, font_size=60):
     img = Image.new('RGB', (100, 100), color=(255, 255, 255))
  
      # Draw the predicted letter on the image
-     draw = ImageDraw.Draw(img)
+    draw = ImageDraw.Draw(img)
  
      # Calculate text size and position for centering
-     text_width, text_height = draw.textsize(predicted_char, font=font)
-     text_x = (100 - text_width) // 2
-     text_y = (100 - text_height) // 2
+    text_width, text_height = draw.textsize(predicted_char, font=font)
+    text_x = (100 - text_width) // 2
+    text_y = (100 - text_height) // 2
  
-     draw.text((text_x, text_y), predicted_char, fill=(0, 0, 0), font=font)
+    draw.text((text_x, text_y), predicted_char, fill=(0, 0, 0), font=font)
  
-     return img
+    return img
  
 # Streamlit app
  st.title("Character Recognition App")
