@@ -3,7 +3,7 @@ numpy
 matplotlib
 Pillow
 streamlit
-opencv-python==4.5.4.60
-Pillow==9.0.0
+opencv-python==1.21.5
+
 
 
