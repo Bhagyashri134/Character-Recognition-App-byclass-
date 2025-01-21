@@ -7,7 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/1urlf8ldacsZs6ikRfh6bSYBW2ri_lB7s
 """
 
-%%writefile app.py
+#%%writefile app.py
 import streamlit as st
 import tensorflow as tf
 import numpy as np
