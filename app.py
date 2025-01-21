@@ -21,36 +21,38 @@ class_idx = ['0','1','2','3','4','5','6','7','8','9',
               'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z',
               'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
  
- def predict_character(image):
-     # Convert the image to grayscale
-     gray_image = cv2.cvtColor(image, cv2.COLOR_RGB2GRAY)
+def predict_character(image):
+    # Convert the image to grayscale
+    gray_image = cv2.cvtColor(image, cv2.COLOR_RGB2GRAY)
  
      # Resize the image to match model input shape
-     resized_image = cv2.resize(gray_image, (28, 28))
+    resized_image = cv2.resize(gray_image, (28, 28))
  
      # Invert the colors
-     inverted_image = cv2.bitwise_not(resized_image)
+    inverted_image = cv2.bitwise_not(resized_image)
  
      # Add channel dimension
-     input_image = np.expand_dims(inverted_image, axis=-1)
-     input_image = np.expand_dims(input_image, axis=0)
+    input_image = np.expand_dims(inverted_image, axis=-1)
+    input_image = np.expand_dims(input_image, axis=0)
  
      # Predict the image
-     scores = model.predict(input_image)
+    scores = model.predict(input_image)
  
      # Get the predicted character index
-     index = np.argmax(scores)
+    index = np.argmax(scores)
  
      # Return the predicted character
-     return class_idx[index]
+    return class_idx[index]
  
- def apply_style(predicted_char, font_size=60):
-     # Set the font
-     font_path = "/content/RowlandDemoCaligraphy.ttf"  # Path to a font file
-     font = ImageFont.truetype(font_path, size=font_size)
+
+def apply_style(predicted_char, font_size=60):
+    
+    # Set the font
+    font_path = "/content/RowlandDemoCaligraphy.ttf"  # Path to a font file
+    font = ImageFont.truetype(font_path, size=font_size)
  
      # Create a blank image with white background
-     img = Image.new('RGB', (100, 100), color=(255, 255, 255))
+    img = Image.new('RGB', (100, 100), color=(255, 255, 255))
  
      # Draw the predicted letter on the image
      draw = ImageDraw.Draw(img)
