@@ -118,5 +118,3 @@ Original file is located at
 #
 
 """## Run app.py File by following command"""
-
-!streamlit run app.py & npx localtunnel --port 8501
