@@ -7,7 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/1urlf8ldacsZs6ikRfh6bSYBW2ri_lB7s
 """
 
-pip install streamlit -q
+
 
 """##GUI Interface For Recognition
 
