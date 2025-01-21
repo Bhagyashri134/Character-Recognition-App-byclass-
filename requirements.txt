@@ -4,5 +4,5 @@ opencv-python
 matplotlib
 Pillow
 streamlit
-
+pandas
 
