@@ -7,18 +7,6 @@ Original file is located at
     https://colab.research.google.com/drive/1urlf8ldacsZs6ikRfh6bSYBW2ri_lB7s
 """
 
-
-
-"""##GUI Interface For Recognition
-
-
-*   Download Model & upload it in the google colab
-*   Download Font Style & upload it in google colab
-
-
-"""
-
-Commented out IPython magic to ensure Python compatibility.
 %%writefile app.py
 import streamlit as st
 import tensorflow as tf
