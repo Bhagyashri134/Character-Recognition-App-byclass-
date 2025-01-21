@@ -67,7 +67,7 @@ def apply_style(predicted_char, font_size=60):
     return img
  
 # Streamlit app
- st.title("Character Recognition App")
+st.title("Character Recognition App")
  
 # Upload image
 uploaded_file = st.file_uploader("Upload an image from x_test dataset", type=["jpg", "png", "jpeg"])
