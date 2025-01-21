@@ -14,7 +14,7 @@ import numpy as np
 from PIL import Image, ImageDraw, ImageFont
 import cv2
 
-Load the pre-trained model
+#Load the pre-trained model
 model = tf.keras.models.load_model("/content/model - 32x64 bs_1024 ep_5 acc_0.871 loss_0.345  (1).h5")
 # Load the characters list
 class_idx = ['0','1','2','3','4','5','6','7','8','9',
